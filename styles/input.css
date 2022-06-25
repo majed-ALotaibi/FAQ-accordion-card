@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.question{
+    @apply flex justify-between text-left font-Kumbh font-normal text-base   text-Verydarkgrayishblue ;
+}
+
+.question::after{
+content: url('../images/icon-arrow-down.svg');
+}.activequestion{
+    @apply text-Verydarkdesaturatedblue font-bold text-base  flex justify-between text-left font-Kumbh ;
+
+}
+.activequestion::after{
+    content: url('../images/icon-arrow-down.svg');
+    @apply transform rotate-180 ;
+    
+}

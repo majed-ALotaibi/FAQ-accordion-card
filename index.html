@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+
+  <main
+    class="font-Kumbh w-screen h-screen bg-gradient-to-t from-BGSoftblue to-BGSoftviolet flex justify-center items-center">
+
+    <div id="card"
+      class="flex flex-col shadow-sm space-y-8 w-[23rem] h-[37rem] bg-white rounded-3xl md:flex-row md:w-[65rem] md:h-[33rem] md:space-x-12">
+      <!-- image -->
+      <div class="flex flex-col justify-center items-center md:w-1/2  relative ">
+        <img src="./images/illustration-woman-online-mobile.svg" alt="woman online"
+          class="w-2/3 -mt-28 bg-mobile pb-8 bg-no-repeat bg-bottom md:hidden">
+        <!-- desktop images -->
+        <div class="hidden md:block w-full  h-full">
+          <img src="./images/illustration-box-desktop.svg" alt="box" class="  absolute top-56 right-[26.3rem]">
+          <div class="hidden md:flex w-full items-center h-full overflow-hidden bg-desktop bg-right ">
+            <img src="./images/illustration-woman-online-desktop.svg" alt="women illustration" class="hidden -ml-20 md:flex w-full h-3/4">
+            <!-- <img src="./images/bg-pattern-desktop.svg" alt="background" class="absolute right-24"> -->
+            
+           </div>
+        </div>
+        
+      </div>
+      
+     
+      <!-- header -->
+      <div class="md:w-1/2 space-y-6 md:pt-8">
+        <h1 class=" font-Kumbh font-bold text-4xl text-center md:text-left">FAQ </h1>
+        <!-- questions  -->
+        <div id='questionsContainer' class=" w-full max-h-fit  ">
+          <!-- q1 -->
+          <div id="questionanswer"
+            class=" w-11/12 mx-auto py-4 border-b cursor-pointer border-dvLightgrayishblue questionanswer md:mx-0 ">
+            <p id="question" class=" question ">
+              How many team members can I invite?
+            </p>
+            <p class="hidden text-sm text-Darkgrayishblue pt-2 max-w-md">
+              You can invite up to 2 additional users on the Free plan. There is no limit on
+              team members for the Premium plan.
+            </p>
+          </div>
+
+          <!-- q2 -->
+          <div id="questionanswer"
+            class="w-11/12 mx-auto py-4 border-b cursor-pointer border-dvLightgrayishblue questionanswer md:mx-0 ">
+            <p id="question" class="activequestion">
+              What is the maximum file upload size?
+            </p>
+            <p class="flex text-sm text-Darkgrayishblue pt-2 max-w-md">
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </p>
+          </div>
+          <!-- q3 -->
+          <div id="questionanswer"
+            class="w-11/12 mx-auto py-4 border-b cursor-pointer border-dvLightgrayishblue questionanswer md:mx-0 ">
+            <p id="question" class="question">
+              How do I reset my password?
+            </p>
+            <p class="hidden text-sm text-Darkgrayishblue pt-2 max-w-md2">
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </p>
+          </div>
+          <!-- q4 -->
+          <div id="questionanswer"
+            class="w-11/12 mx-auto py-4 border-b cursor-pointer border-dvLightgrayishblue questionanswer md:mx-0 ">
+            <p id="question" class="question">
+              Can I cancel my subscription?
+            </p>
+            <p class="hidden text-sm text-Darkgrayishblue pt-2 max-w-md">
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </p>
+          </div>
+          <!-- q5 -->
+          <div id="questionanswer"
+            class="w-11/12 mx-auto py-4 border-b cursor-pointer border-dvLightgrayishblue questionanswer md:mx-0 ">
+            <p id="question" class="question">
+              Do you provide additional support?
+            </p>
+            <p class="hidden text-sm text-Darkgrayishblue pt-2 max-w-md">
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+
+</body>
+<script src="./script/script.js"></script>
+
+</html>
